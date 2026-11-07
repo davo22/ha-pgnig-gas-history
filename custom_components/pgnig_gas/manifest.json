@@ -1,0 +1,14 @@
+{
+  "domain": "pgnig_gas",
+  "name": "PGNiG/ORLEN Gas History (even spread)",
+  "after_dependencies": ["pgnig_gas_sensor"],
+  "codeowners": ["@davo22"],
+  "config_flow": true,
+  "dependencies": ["recorder"],
+  "documentation": "https://github.com/davo22/ha-pgnig-gas-history",
+  "issue_tracker": "https://github.com/davo22/ha-pgnig-gas-history/issues",
+  "integration_type": "helper",
+  "iot_class": "calculated",
+  "requirements": [],
+  "version": "1.0.0"
+}

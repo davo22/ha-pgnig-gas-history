@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Gas meter",
+        "description": "Pick the pgnig-sensor gas meter whose billing readings should be spread evenly over their billing periods.",
+        "data": {
+          "meter": "Meter number"
+        }
+      }
+    },
+    "abort": {
+      "no_meters": "No (unconfigured) gas meter from the PGNiG/ORLEN gas sensor integration found. Set that integration up first.",
+      "already_configured": "This meter is already configured."
+    }
+  },
+  "services": {
+    "sync": {
+      "name": "Sync gas history",
+      "description": "Spreads the latest meter reading and its invoice over the billing period now, instead of waiting for the next scheduled check."
+    }
+  }
+}

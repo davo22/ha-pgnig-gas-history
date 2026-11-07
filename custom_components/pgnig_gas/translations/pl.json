@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Gazomierz",
+        "description": "Wybierz gazomierz z integracji pgnig-sensor, którego odczyty z faktur mają być rozkładane równo na okres rozliczeniowy.",
+        "data": {
+          "meter": "Numer gazomierza"
+        }
+      }
+    },
+    "abort": {
+      "no_meters": "Nie znaleziono (nieskonfigurowanego) gazomierza z integracji PGNiG/ORLEN gas sensor. Najpierw skonfiguruj tamtą integrację.",
+      "already_configured": "Ten gazomierz jest już skonfigurowany."
+    }
+  },
+  "services": {
+    "sync": {
+      "name": "Synchronizuj historię gazu",
+      "description": "Od razu rozkłada najnowszy odczyt i jego fakturę na okres rozliczeniowy, bez czekania na kolejne sprawdzenie."
+    }
+  }
+}
